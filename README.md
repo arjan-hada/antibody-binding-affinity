@@ -8,8 +8,8 @@ Predict the binding affinity (Kd) between single-chain variable fragments (scFv)
 
 **Key Takeaways**
 
-🔹 We finetune antibody specific and general protein language model for predicting binding affinity (Kd) between single-chain variable fragments (scFv) and the target the SARS-CoV-2 peptide.
+🔹 I finetune antibody specific and general protein language model for predicting binding affinity (Kd) between single-chain variable fragments (scFv) and the target the SARS-CoV-2 peptide.
 
 🔹 esm2_t33_650M_UR50D model demonstrated superior performance compared to antibody-specific language models, namely antiberta2-cssp, antiberta2, and ablang-H. Notably, while the performance of ablang-H lagged significantly behind, the remaining three models showed relatively comparable results. However, it is important to note, esm2_t33_650M_UR50D is larger, containing about 650 million parameters, whereas both antiberta2 and antiberta2-cssp have around 202 million parameters.
 
-🔹 We exceeded the original study's Spearman rho (0.64 vs ~0.50) on hold-out set using just a single model, as opposed to the original study's ensemble of 16 models. 
+🔹 My approach exceeded the original study's Spearman rho (0.64 vs ~0.50) on hold-out set using just a single model, as opposed to the original study's ensemble of 16 models. 
