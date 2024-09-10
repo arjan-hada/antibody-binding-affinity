@@ -15,7 +15,11 @@ Predict the binding affinity (Kd) between single-chain variable fragments (scFv)
 
 🔹 My approach exceeded the original study's Spearman rho (0.64 vs ~0.50) on hold-out set using just a single model, as opposed to the original study's ensemble of 16 models. 
 
-🔹 Our model achieved a Spearman correlation of 0.4833 on the out-of-distribution assessment library, indicating a moderate positive correlation between predicted and actual binding affinities. In contrast, the published results showed a Spearman correlation of NaN, suggesting a lack of meaningful correlation in their predictions.
+🔹 Our model achieved a Spearman correlation of 0.4833 on the out-of-distribution assessment library, indicating a moderate positive correlation between predicted and actual binding affinities. In contrast, the published results from the ensemble of 16 models showed a Spearman correlation of 0.6852, suggesting a significant improvement in predictive performance on the assessment library.
 
 ![image](https://github.com/user-attachments/assets/d66fe989-9ce7-4330-a6ba-44004bfad7bc)
+
+**Notable To Dos:**
+- **Incorporating Missing Data Thoughtfully:** Classifying binders and non-binders, followed by regression on binders, can help generalize better to the assessment library.
+- **Ensemble Modeling with Specialized Architectures:** Combining ESM2 and antibody-specific language models can improve generalization performance on diverse datasets.
 
